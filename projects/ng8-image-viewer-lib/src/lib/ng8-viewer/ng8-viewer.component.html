@@ -1,0 +1,29 @@
+<div class="img-container" [style.backgroundColor]="config.containerBackgroundColor"
+     (wheel)="scrollZoom($event)" (dragover)="onDragOver($event)">
+  <img [src]="src[index]" [ngStyle]="style" alt="Image not found..." (dragstart)="onDragStart($event)" (load)="onLoad()" (loadstart)="onLoadStart()"/>
+  <!-- Div below will be used to hide the 'ghost' image when dragging -->
+  <div></div>
+  <div class="spinner-container" *ngIf="loading">
+    <div class="spinner"></div>
+  </div>
+
+  <button mat-mini-fab type="button" *ngIf="config.btnShow.rotateCounterClockwise" (click)="rotateCounterClockwise()">
+    <mat-icon>{{ config.btnIcons.rotateCounterClockwise }}</mat-icon>
+  </button>
+
+  <button mat-mini-fab type="button" *ngIf="config.btnShow.rotateClockwise" (click)="rotateClockwise()">
+    <mat-icon>{{ config.btnIcons.rotateClockwise }}</mat-icon>
+  </button>
+
+  <button mat-mini-fab type="button" *ngIf="config.btnShow.zoomOut" (click)="zoomOut()">
+    <mat-icon>{{ config.btnIcons.zoomOut }}</mat-icon>
+  </button>
+
+  <button mat-mini-fab type="button" *ngIf="config.btnShow.zoomIn" (click)="zoomIn()">
+    <mat-icon>{{ config.btnIcons.zoomIn }}</mat-icon>
+  </button>
+
+  <button mat-mini-fab type="button" *ngFor="let cBtn of config.customBtns" (click)="fireCustomEvent(cBtn.name, index)">
+    <mat-icon>{{ cBtn.icon }}</mat-icon>
+  </button>
+</div>

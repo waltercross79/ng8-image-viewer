@@ -16,6 +16,14 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "ng8-image-viewer-lib": [
+        "dist/ng8-image-viewer-lib"
+      ],
+      "ng8-image-viewer-lib/*": [
+        "dist/ng8-image-viewer-lib/*"
+      ]
+    }
   }
 }

@@ -1,0 +1,17 @@
+{
+  "extends": "../../tslint.json",
+  "rules": {
+    "directive-selector": [
+      true,
+      "attribute",
+      "ng8-image-viewer",
+      "camelCase"
+    ],
+    "component-selector": [
+      true,
+      "element",
+      "ng8-image-viewer",
+      "kebab-case"
+    ]
+  }
+}
