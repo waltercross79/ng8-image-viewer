@@ -1,8 +1,13 @@
 {
   "name": "ng8-image-viewer-lib",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "author": { "name": "Walter Cross", "url": "https://github.com/waltercross79" },
-  "license": "MIT",
+  "description": "This is a simple Angular image viewer library.",  
+  "license" : "SEE LICENSE IN LICENSE",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/waltercross79/ng8-image-viewer"
+  },
   "peerDependencies": {
     "@angular/common": "^8.0.0",
     "@angular/core": "^8.0.0",

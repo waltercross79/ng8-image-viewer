@@ -1,6 +1,6 @@
 {
   "name": "ng8-image-viewer",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -8,9 +8,12 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
+    "copy_readme": "cp ./README.md ./dist/ng8-image-viewer-lib",
+    "copy_license": "cp ./LICENSE ./dist/ng8-image-viewer-lib",
+    "copy_files": "npm run copy_license && npm run copy_readme",
     "build_lib": "ng build ng8-image-viewer-lib",
     "npm_pack": "cd dist/ng8-image-viewer-lib && npm pack",
-    "package": "npm run build_lib && npm run npm_pack"
+    "package": "npm run build_lib && npm run copy_files && npm run npm_pack"
   },
   "private": true,
   "dependencies": {
