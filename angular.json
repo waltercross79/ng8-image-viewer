@@ -3,33 +3,33 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ng8-image-viewer-lib": {
-      "root": "projects/ng8-image-viewer-lib",
-      "sourceRoot": "projects/ng8-image-viewer-lib/src",
+    "ng8-image-viewer": {
+      "root": "projects/ng8-image-viewer",
+      "sourceRoot": "projects/ng8-image-viewer/src",
       "projectType": "library",
       "prefix": "ng8-image-viewer",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-ng-packagr:build",
           "options": {
-            "tsConfig": "projects/ng8-image-viewer-lib/tsconfig.lib.json",
-            "project": "projects/ng8-image-viewer-lib/ng-package.json"            
+            "tsConfig": "projects/ng8-image-viewer/tsconfig.lib.json",
+            "project": "projects/ng8-image-viewer/ng-package.json"            
           }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "projects/ng8-image-viewer-lib/src/test.ts",
-            "tsConfig": "projects/ng8-image-viewer-lib/tsconfig.spec.json",
-            "karmaConfig": "projects/ng8-image-viewer-lib/karma.conf.js"
+            "main": "projects/ng8-image-viewer/src/test.ts",
+            "tsConfig": "projects/ng8-image-viewer/tsconfig.spec.json",
+            "karmaConfig": "projects/ng8-image-viewer/karma.conf.js"
           }
         },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "projects/ng8-image-viewer-lib/tsconfig.lib.json",
-              "projects/ng8-image-viewer-lib/tsconfig.spec.json"
+              "projects/ng8-image-viewer/tsconfig.lib.json",
+              "projects/ng8-image-viewer/tsconfig.spec.json"
             ],
             "exclude": [
               "**/node_modules/**"
@@ -167,5 +167,5 @@
       }
     }
   },
-  "defaultProject": "ng8-image-viewer-lib"
+  "defaultProject": "ng8-image-viewer"
 }

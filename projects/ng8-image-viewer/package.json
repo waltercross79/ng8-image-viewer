@@ -1,6 +1,6 @@
 {
-  "name": "ng8-image-viewer-lib",
-  "version": "0.0.3",
+  "name": "ng8-image-viewer",
+  "version": "0.0.4",
   "author": { "name": "Walter Cross", "url": "https://github.com/waltercross79" },
   "description": "This is a simple Angular image viewer library.",  
   "license" : "SEE LICENSE IN LICENSE",

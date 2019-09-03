@@ -1,5 +1,5 @@
 import { Component, Sanitizer } from '@angular/core';
-import { ImageViewerConfig, CustomEvent } from 'projects/ng8-image-viewer-lib/src/lib/ng8-viewer/ng8-viewer.config.model';
+import { ImageViewerConfig, CustomEvent } from 'projects/ng8-image-viewer/src/lib/ng8-viewer/ng8-viewer.config.model';
 import { DomSanitizer } from '@angular/platform-browser';
 
 @Component({

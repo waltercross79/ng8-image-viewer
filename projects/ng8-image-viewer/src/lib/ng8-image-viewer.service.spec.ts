@@ -1,6 +1,6 @@
 import { TestBed } from '@angular/core/testing';
 
-import { Ng8ImageViewerLibService } from './ng8-image-viewer-lib.service';
+import { Ng8ImageViewerLibService } from './ng8-image-viewer.service';
 
 describe('Ng8ImageViewerLibService', () => {
   beforeEach(() => TestBed.configureTestingModule({}));

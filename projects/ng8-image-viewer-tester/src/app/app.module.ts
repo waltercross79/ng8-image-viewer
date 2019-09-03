@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 
-import { Ng8ImageViewerLibModule } from 'ng8-image-viewer-lib';
+import { Ng8ImageViewerLibModule } from 'dist/ng8-image-viewer';
 
 @NgModule({
   declarations: [
